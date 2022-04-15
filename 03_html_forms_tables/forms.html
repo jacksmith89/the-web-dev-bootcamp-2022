@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username</label>
+            <input type="text" name="username" id="username" placeholder="username">
+        </p>
+        <div>
+            <label for="password">Enter a Password</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+        <p>
+            <label for="color">Enter a Color</label>
+            <input type="color" name="color" id="color">
+        </p>
+        <p>
+            <!-- Alternate way to label an input -->
+            <label>
+                Enter a Number:
+                <input type="number" name="num" id="number" placeholder="Enter a number">
+            </label>
+        </p>
+        <!-- this button doesn't submit the form b/c of the "type" attribute -->
+        <button type="button">Regular button (won't submit)</button>
+        <!-- This button submits the form! -->
+        <button>Submit!!!</button>
+        <!-- So does this one: -->
+        <input type="submit">
+    </form>
+    <hr>
+    <!-- Outside of a form, no default behavior -->
+    <button>Not Inside Form</button>
+    <!-- "hijack" google or reddit by matching the search website and form name -->
+    <h2>Hijacking Searches</h2>
+    <form action="https://www.reddit.com/search">
+        <label for="reddit-search">Reddit Search</label>
+        <input type="text" name="q" id="reddit-search">
+        <button>Search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <label for="google-search">Google Search</label>
+        <input type="text" name="q" id="google-search">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/search">
+        <label for="youtube-search">YouTube Search</label>
+        <input type="text" name="search_query" id="youtube-search">
+        <button>Search YouTube</button>
+    </form>
+</body>
+
+</html>
