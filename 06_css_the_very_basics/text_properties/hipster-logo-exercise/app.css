@@ -7,3 +7,10 @@ h1 {
     letter-spacing: 20px;
     text-decoration: underline wavy plum;
 }
+
+div {
+    width: 500px;
+    margin: 0 auto;
+    border: solid 5px black;
+    padding: 10px;
+}
